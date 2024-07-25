@@ -14,9 +14,11 @@
         <header>
             <h1>Mail list!</h1>
             <hr>
-            <div v-for="email, i in random_mails">
-                {{ email }}
-            </div>
+            <span>Clicca qui per generare dieci indirizzi mail casuali</span>
+            <button @click="generateRandomMail()">Inizia a generare</button>
+            <ul v-for="email, i in random_mails">
+                <li>{{ email }}</li>
+            </ul>
         </header>
     </div>
 

@@ -4,10 +4,8 @@ createApp({
     data() {
         return { 
             random_mails: [],
+            email: '',
         }
-    },
-    created() {
-        this.generateRandomMail();
     },
     methods: {
         generateRandomMail(){
