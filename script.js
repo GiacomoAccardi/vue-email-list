@@ -12,7 +12,7 @@ createApp({
     methods: {
         generateRandomMail(){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((response) => {
-                this.email = response
+                this.email = response.data.response
             });
         }
     }
